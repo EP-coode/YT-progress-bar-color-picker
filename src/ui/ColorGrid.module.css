@@ -1,0 +1,32 @@
+.colorGridContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.colorTile {
+  --tileColor: var(--bg-primary);
+  --tileSize: 2rem;
+
+  width: var(--tileSize);
+  height: var(--tileSize);
+
+  background-color: var(--tileColor);
+  border-radius: 20%;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition-duration: var(--transition-time-normal);
+}
+
+.colorTile:hover {
+  border: 1px solid #fff;
+  scale: 1.1;
+}
+
+.colorTile:active {
+  border: 1px solid #fff;
+  scale: 1;
+}

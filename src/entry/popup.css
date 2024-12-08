@@ -1,0 +1,48 @@
+@layer defaults {
+  :root {
+    --bg-primary: #201c29;
+    --text-primary: #fff;
+    --transition-time-normal: 200ms;
+
+    --btn-bg-primary: rgb(223, 4, 4);
+    --btn-color-primary: black;
+
+    /* TODO: Light mode */
+    @media (prefers-color-scheme: light) {
+    }
+  }
+
+  html {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  button {
+    cursor: pointer;
+    padding: 6px;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    background-color: var(--btn-bg-primary);
+    color: var(--btn-color-primary);
+    border: 2px solid var(--btn-color-primary);
+    transition-duration: var(--transition-time-normal);
+  }
+
+  button:hover {
+    scale: 1.1;
+  }
+
+  button:active {
+    scale: 1;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}

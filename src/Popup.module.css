@@ -1,0 +1,48 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.currentColorContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.currentColorValue {
+  user-select: all;
+}
+
+input[type="color"].colorInput {
+  -webkit-appearance: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+input[type="color"].colorInput::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"].colorInput::-webkit-color-swatch {
+  border: none;
+}

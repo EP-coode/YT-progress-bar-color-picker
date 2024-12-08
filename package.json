@@ -1,0 +1,35 @@
+{
+  "name": "yt-progressbar-color-picker",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build:dev": "node esbuild.mjs",
+    "build:prod": "rimraf ./public/build && cross-env NODE_ENV=\"production\" node esbuild.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "imports": {},
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "cross-env": "^7.0.3",
+    "esbuild": "0.24.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.13.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  },
+  "dependencies": {
+    "i18next": "^24.0.5",
+    "react-i18next": "^15.1.3"
+  }
+}
